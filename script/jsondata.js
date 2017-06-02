@@ -1,4 +1,4 @@
-var jsondata= [{
+var jsondata = [{
         "nutrition": {
             "Fiber": "7 g(28%)",
             "Polyunsaturated Fat": "3 g",

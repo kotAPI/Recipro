@@ -1,11 +1,4 @@
 var public_actual_JSON;
-
-$(document).ready(function(){
-	 
-
-	 
-
-})
 /*
 
 function loadJSON(file, callback) {   
@@ -23,10 +16,11 @@ function loadJSON(file, callback) {
  }
  */
 
-        public_actual_JSON = jsondata;
+        public_actual_JSON = $.merge(jsondata,jsondata2);
         //console.log(public_actual_JSON)
 
         var arrayNames =[];
+
 
         for(key in public_actual_JSON){
         	arrayNames[key] = public_actual_JSON[key].name;
@@ -42,7 +36,9 @@ function loadJSON(file, callback) {
 
 	         for(key in public_actual_JSON){
 	         	if(public_actual_JSON[key].name==suggestion.value){
+		         		
 	         		selectedObject = public_actual_JSON[key];
+
 	         		console.log(selectedObject)
 	         		//window.location = "/"+selectedObject[key].name;
 	         		break;
