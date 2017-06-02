@@ -158,3 +158,16 @@ strong{
     font-weight: 600;
     padding:36px;
 }
+
+
+@media only screen and (max-width: 40em) { 
+#r-navbar-title{
+	font-size: 3em;
+	top:20px;
+}
+#search-box{
+	width: 180px;
+}
+
+
+} /* max-width 640px, mobile-only styles, use when QAing mobile issues */
