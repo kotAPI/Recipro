@@ -23,20 +23,47 @@ nutritionObj = {
 var ReactRecipieWrapper = function(recipieObject){
 	// Grab image source
 	var foodImage = recipieObject["image"];
+	if(foodImage=="null"){
+		foodImage="http://assets.kraftfoods.com/recipe_images/opendeploy/171292_640x428.jpg"
+	}
 	// Original link to the recipe, this is given to the href attribute of the foodName
 	var foodLink = recipieObject["recipe_link"];
+	if(foodLink=="null"){
+		foodLink="https://www.google.co.in/search?q=food&source=lnms&tbm=isch&sa=X&ved=0ahUKEwiXsofprp_UAhXEs48KHbfaC_QQ_AUIBygC&biw=1366&bih=599"
+	}
 	// Grab food name
 	var foodName = recipieObject["name"];
+	if(foodName=="null"){
+		foodName="Amazing food!"
+	}
 	// Grab author of the recipie
 	var authorName = recipieObject["author"];
+	if(authorName=="null"){
+		authorName = "Batman!"
+	}
 	// Grab nutrition object and create required reactElements
 	var nutritionalInfoObject = recipieObject["nutrition"];
+	if(nutritionalInfoObject=="null"){
+		nutritionalInfoObject={
+			"Awesomeness": "10 g",
+			"Greatness":"66 g"
+		}
+	}
 	// Grab recipie description
 	var description = recipieObject["desc"];
+	if(description=="null"){
+		description = "This food is amazing! Just taste it and you can say it for yourself!"
+	}
 	// Grab insturctions
 	var howToMake = recipieObject["preparation"];
+	if(howToMake=="null"){
+		howToMake = "Take a nap, Wake up, Open the oven. Eat!"
+	}
 	// Grab ingredients
 	var ingredients = recipieObject["ingredients"]
+	if(ingredients=="null"){
+		ingredients=["Fountain of youth", "Sacred Salt Rocks"]
+	}
 	// Supply ingredientsInfo to ingredient populate DOM
 	var ingredientsInfo = ingredients.join(", \n");
 
