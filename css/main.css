@@ -1,0 +1,160 @@
+@font-face {
+    font-family: fontOne;
+    src: url("../assets/font/Agreloy.ttf");
+}
+@font-face {
+    font-family: fontTwo;
+    src: url("../assets/font/kenyan.ttf");
+}
+@font-face {
+    font-family: fontThree;
+    src: url("../assets/font/Quicksand_Light.otf");
+}
+body{
+	overflow-x: hidden;
+}
+
+#r-navbar{
+	height: 180px;
+	background-color: #d84e4e;
+	box-shadow: 7px -7px 7px 9px;
+	margin-bottom: 10px;
+}
+#r-navbar-cheflogo{
+	margin-top: 10px;
+	background-image: url("../assets/img/1png");
+	width: 100px;
+    height: 100px;
+    background-size: 100% 100%;
+    margin:auto;
+}
+#header-container{
+	margin-top:10px;
+}
+#r-navbar-title{
+	font-family: fontOne;
+    font-size: 5.5em;
+    line-height: 0.6;
+    text-align: center;
+    color: white;
+
+}
+
+#r-author{
+    font-size: 1.2em;
+    font-style: oblique;
+}
+
+
+/* Data Content */
+.content-box{
+	min-height: 350px;
+}
+
+#r-data-content-one{
+	text-align: center;
+}
+#r-image{
+	background-image: url();
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: auto;
+    width: 100%;
+    margin-bottom: 10px;
+    transition:all 1s;
+    box-shadow:2px 1px 10px rgba(0, 0, 0, 0.32);
+}
+#r-image:hover{
+	filter: blur(1px) grayscale(1) contrast(1.1);
+}
+#r-foodname{
+	text-align: center;
+	margin-top:20px;
+	margin-bottom: 15px;
+	    font-size: 1.5em;
+    color: #da5a5a;
+}
+#r-data-content-two{
+	margin-top:10px;
+	text-align: center;
+}
+#r-nutritonal-info-title{
+	text-align: center;
+	font-family: fontTwo;
+	font-size: 2em;	
+    padding: 10px;
+        color: #d84e4e;
+}
+
+#search-container{
+	margin: 20px;
+    text-align: center;
+}
+#search-box{
+	border: 1px solid grey;
+    border-radius: 18px;
+    height: 29px;
+    max-width: 400px;
+    width: 100%;
+    font-size: 0.6em;
+    padding: 15px;
+    text-align: center;
+    transition:all 0.5s;
+    outline:none;
+}
+#search-box:focus{
+	border:1px solid green;
+}
+.autocomplete-suggestions{
+	background:white;
+	overflow: hidden;
+
+}
+.autocomplete-suggestion{
+	background-color:rgba(255,255,255,0.5);
+	text-align: center;
+	padding: 10px;
+	cursor: pointer;
+	font-size: 0.8em;
+
+}
+.autocomplete-suggestion:hover{
+	background-color: grey;
+}
+strong{
+	color:blue;
+}
+.r-nutrition-attr{
+	color: black;
+    font-weight: 600;
+    font-family: fontThree;
+    font-size: 1em;
+}
+#r-description-title{
+	font-size: 2em;
+    text-align: center;
+    padding: 10px;
+    font-family: fontTwo;
+        color: #d84e4e;
+}
+#r-description-body{
+	margin-bottom: 30px;
+    text-align: justify;
+    font-family: fontThree;
+    color: black;
+    font-weight: 600;
+    padding:36px;
+}
+#r-howtomake-title{
+	text-align: center;
+    font-size: 2em;
+    font-family: fontTwo;
+        color: #d84e4e;
+}
+#r-howtomake-body{
+	text-align: justify;
+	font-family: fontThree;
+	    color: black;
+    font-weight: 600;
+    padding:36px;
+}
