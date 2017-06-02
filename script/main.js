@@ -1,13 +1,12 @@
 var public_actual_JSON;
 
 $(document).ready(function(){
-	 console.log(load());
-	 console.log(public_actual_JSON)
+	 
 
 	 
-    
-})
 
+})
+/*
 
 function loadJSON(file, callback) {   
 
@@ -22,13 +21,9 @@ function loadJSON(file, callback) {
     };
     xobj.send(null);  
  }
- 
+ */
 
-function load() {
-   
-
-    loadJSON("../assets/data/data.json", function(response) {  
-        public_actual_JSON = JSON.parse(response);
+        public_actual_JSON = jsondata;
         //console.log(public_actual_JSON)
 
         var arrayNames =[];
@@ -60,7 +55,5 @@ function load() {
 	  });
 
        
-    });
+ 
     
-    
-}
